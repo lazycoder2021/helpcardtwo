@@ -1,0 +1,149 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: grey;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: 'Segoe UI';
+        }
+
+        .card {
+            border: 1px solid black;
+            width: 830px;
+            height: 240px;
+            border-radius: 20px;
+            background-color: white;
+            display: flex;
+            align-items: center;
+            padding: 20px 20px;
+        }
+
+            .card h2 {
+                font-weight: 100;
+            }
+
+        .left, .right {
+            //border: 1px solid black;
+            height: 80px;
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            //align-items:center;
+            height: auto;
+        }
+
+        .left {
+            width: 20%;
+        }
+        
+        .left i{
+            text-align:center;
+            color:orange;
+            font-size:68px;
+        }
+
+
+
+        .right {
+            width: 80%;
+            position:relative;
+        }
+
+            .right h2 {
+                margin-bottom: 5px;
+            }
+
+            .right p {
+                line-height: 35px;
+                font-size: 18px;
+            }
+
+            button{
+                width:80px;
+                height:30px;
+                position:absolute;
+                padding:0px 20px;
+                bottom:-15px;
+                right:20px;
+                background-color:lawngreen;
+                color:white;
+                border:none;
+                font-size:18px;
+                cursor:pointer;
+            }
+
+            @media only screen and (max-width:480px){
+                
+
+                .card{
+                    width:480px;
+                    height:300px;
+                }
+
+                .left {
+                    width: 20%;
+                }
+
+                    .left i {
+                        text-align: center;
+                        color: orange;
+                        font-size: 58px;
+                    }
+
+
+
+                .right {
+                    width: 80%;
+                    position: relative;
+                }
+
+                    .right h2 {
+                        margin-bottom: 5px;
+                    }
+
+                    .right p{
+                        font-size:14px;
+                        line-height:30px;
+                    }
+
+                    button{
+                        margin-bottom:-20px;
+                    }
+
+            }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="left">
+            <i class="fa fa-warning"></i>
+        </div>
+        <div class="right">
+            <h2>
+                Microphone Access Not Provided
+            </h2>
+            <p>
+                Click the <b>microphone icon</b> next to the address bar and select <b>'Always allow MEGA to access your microphone' </b>option (or) click <b>Manage</b> and <b>modify your browser settings</b> to allow MEGA access to your microphone.
+            </p><p style="margin-top:3px;">Click OK to close this message.</p>
+            
+            <button>OK</button>
+        </div>
+    </div>
+</body>
+</html>
